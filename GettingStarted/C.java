@@ -9,6 +9,6 @@ public class C {
         int area = a * b;
         int cir = (a + b) * 2;
 
-        System.out.print(area + " " + cir);
+        System.out.println(area + " " + cir);
     }
 }

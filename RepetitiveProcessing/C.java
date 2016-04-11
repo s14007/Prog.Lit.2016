@@ -5,15 +5,12 @@ public class C {
         Scanner scan = new Scanner(System.in);
 
         while (true) {
-            int x = scan.nextInt();
-            int y = scan.nextInt();
+            int x = scan.nextInt(), y = scan.nextInt();
 
             if (x == 0 && y == 0) {
                 break;
-            } else {
-                int xy = Math.multiplyExact(x, y);
-                System.out.println(xy == 1 ? x + " " + y : y + " " + x);
             }
+            System.out.println(x < y? x + " " + y : y + " " + x);
         }
     }
 }
