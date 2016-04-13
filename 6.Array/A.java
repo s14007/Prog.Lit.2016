@@ -4,18 +4,13 @@ public class A {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
-        String[] string = new String[n];
+        ArrayList<Integer> ls = new ArrayList<>();
 
-        for (int i = 0; i < n; i++) {
-            string[i] = scan.next();
-        }
+        for (int i = 0; i < n; i++) ls.add(scan.nextInt());
 
-        for(int i = string.length-1; i >= 0; i--){
-            if(i != 0){
-                System.out.print(string[i] + " ");
-            }else{
-                System.out.print(string[i]);
-            }
+        Collections.reverse(ls);
+        for (int i = 0; i < ls.size(); i++) {
+            System.out.print(i == ls.size() -1? ls.get(i) : ls.get(i) + " ");
         }
         System.out.println();
     }
