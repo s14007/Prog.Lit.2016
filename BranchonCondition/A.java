@@ -7,8 +7,8 @@ public class A {
         int b = scan.nextInt();
 
         int ans = Integer.compare(a, b);
-        String out = ans == 1 ? "a > b" : "a < b";
-        String aa = a == b ? "a == b" : out;
+        String out = (ans == 1) ? "a > b" : "a < b";
+        String aa = (a == b) ? "a == b" : out;
         System.out.println(aa);
     }
 }
