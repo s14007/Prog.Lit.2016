@@ -10,7 +10,6 @@ public class D {
 
         for (int i = 0; i < n; i++) x[i] = scan.nextInt();
 
-
         for (int i = 0; i < n; i++) y[i] = scan.nextInt();
 
         for (int i = 0; i < n; i++) {
